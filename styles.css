@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background: #1f2937;
+    color: white;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    z-index: 1;
+}
+
+.logo {
+    max-width: 80px;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#home {
+    background: rgb(0, 162, 255);
+    color: #f9f9f9;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+em {
+    background-color: rgb(255, 166, 0);
+    border: 4px solid orange;
+    display: inline-block;
+    transform: rotate(-5deg);
+    z-index: 0;
+}
+
+.attract {
+    margin-top: auto;
+}
+
+#product {
+    margin-top: 2vh;
+}
+
+.image {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+figure {
+    border: 2px solid black;
+    border-radius: 2vw;
+    width: 25%;
+    height: auto;
+}
+
+figure a {
+    text-decoration: none;
+}
+
+img {
+    border-top-left-radius: 1.5vw;
+    border-top-right-radius: 1.5vw;
+    width: 100%;
+}
+
+figcaption {
+    padding: 2px;
+    width: 100%;
+    font-size: 2.5vw;
+    color: black;
+}
+.pdt-name {
+    width: 100%;
+    margin: auto;
+}
+
+.price {
+    text-align: center;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.cate {
+    color: grey;
+    width: 100%;
+}
+
+.cta-button {
+    background: #336be4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#home, #product, #testimonies, #sign-up {
+    padding: 15px;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    text-align: center;
+    scroll-margin-top: 10vh;
+}
+
+blockquote {
+    margin: 20px 0;
+    padding: 10px;
+    background: rgb(211, 209, 209);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #35424a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
