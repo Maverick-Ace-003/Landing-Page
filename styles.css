@@ -26,31 +26,36 @@ header {
 }
 
 .logo {
-    max-width: 80px;
-    margin: 0;
+    width: auto;
+    height: 40px;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-flex;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: #e5e7eb;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 2rem;
 }
 
 #home {
     background: rgb(0, 162, 255);
     color: #f9f9f9;
     text-align: center;
-    margin-bottom: auto;
+    margin-bottom: 0;
+    width: 100%;
+}
+#home p {
+    font-size: 1rem;
 }
 
 em {
@@ -62,7 +67,7 @@ em {
 }
 
 .attract {
-    margin-top: auto;
+    margin-top: 0;
 }
 
 #product {
@@ -71,49 +76,72 @@ em {
 
 .image {
     padding: 0;
+    width: 90vw;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2px;
+    column-gap: 1%;
+    row-gap: 2px;
 }
 
 figure {
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 2vw;
-    width: 25%;
-    height: auto;
+    width: 23%;
+    height: 350px;
+    margin: 0;
 }
 
 figure a {
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
 }
 
 img {
-    border-top-left-radius: 1.7vw;
-    border-top-right-radius: 1.7vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
     width: 100%;
+    height: 50%;
 }
 
 figcaption {
     padding: 2px;
     width: 100%;
-    font-size: 2.5vw;
+    font-size: 2.5vh;
     color: black;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
 }
 .pdt-name {
     width: 100%;
-    margin: auto;
+    margin: 0;
+    height: 30%
 }
 
 .price {
     text-align: center;
     font-weight: bold;
     padding-left: 5px;
+    height: 10%;
+    margin: 0;
 }
 
 .cate {
     color: grey;
     width: 100%;
+    height: 10%;
+    margin: 0 0 2vh 0;
 }
 
 .cta-button {
@@ -149,3 +177,152 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/** 4k laptop **/
+@media screen and (min-width: 1441px) {
+    body {
+        font-size: 50px;
+    }
+    .logo {
+        height: 120px;
+        width: auto;
+    }
+    nav ul li a {
+        font-size: 3.5rem;
+    }
+    #home p {
+        font-size: 2.7rem;
+    }
+    .image {
+        row-gap: 20px;
+    }
+    figure {
+        height: 800px;
+    }
+}
+/** L laptop **/
+@media screen and (max-width: 1440px) and (min-width: 1040px) {
+    body {
+        font-size: 50px;
+    }
+    .logo {
+        height: 78px;
+        width: auto;
+    }
+    nav ul li a {
+        font-size: 2.7rem;
+    }
+    #home p {
+        font-size: 2rem;
+    }
+    .image {
+        row-gap: 15px;
+    }
+    figure {
+        height: 450px;
+    }
+}
+  /** laptop **/
+/* @media screen and (max-width: 1440px) {
+    body {
+        font-size: 16px;
+    }
+    nav {
+        padding: 0;
+    }
+    nav ul li a {
+        font-size: 20px;
+        padding: 0;
+    }
+    figure {
+        width: 24%;
+        height: 460px;
+    }
+    .logo {
+        height: 60px;
+        width: 70px;
+        padding: 0;
+    }
+    img {
+        height: 60%;
+    }
+    figcaption {
+        height: 40%
+    }
+  }
+@media screen and (max-width: 1024px) {
+    .logo {
+        height: 70px;
+        width: 60px;
+        padding: 20px 0 5px 0;
+    }
+    figure {
+        height: 300px;
+    }
+    body {
+        font-size: 20px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+} */
+/** tablet **/
+@media screen and (max-width: 900px) and (min-width: 700px) {
+    #home p {
+        font-size: 1.3rem;
+    }
+    .attract {
+        font-size: 1.3rem;
+    }
+    figure {
+        width: 30%;
+        height: 330px;
+    }
+    img {
+        height: 55%;
+    }
+    figcaption {
+        height: 45%
+    }
+    .logo {
+        height: 70px;
+        width: 60px;
+        padding: 20px 0 5px 0;
+    }
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+  }
+/** mobile **/
+@media screen and (max-width: 425px) {
+    figure {
+        width: 49%;
+        height: 310px;
+    }
+    header {
+        height: 12vh;
+    }
+    .logo {
+        width: auto;
+        height: 60px;
+    }
+    #home {
+        margin: 12vh 0 0 0;
+    }
+    #home p {
+        font-size: 1rem;
+        width: 100%;
+    }
+    .attract {
+        font-size: 1.2rem;
+    }
+    #product {
+        margin-top: 0;
+    }
+    nav ul {
+        margin-bottom: 2vh;
+    }
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+  }
